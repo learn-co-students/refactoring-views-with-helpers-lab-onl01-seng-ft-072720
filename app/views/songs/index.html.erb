@@ -1,6 +1,8 @@
 <ul>
 <% @songs.each do |song| %>
   <li><%= link_to song.title, song_path(song) %></li>
+  <li><%= display_artist song %></li>
+  # calls the helper to display the artist
 <% end %>
 </ul>
 <br>
