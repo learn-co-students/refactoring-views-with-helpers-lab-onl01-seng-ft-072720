@@ -1,5 +1,6 @@
 require 'rails_helper'
 
+
 RSpec.describe 'songs/show' do
   before do
     Artist.destroy_all
