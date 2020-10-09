@@ -26,10 +26,10 @@ describe "songs", type:  :feature do
 
   describe "/songs" do
 
-    it "links to the song" do
-      visit songs_path
-      expect(page).to have_link("The Grid", href: song_path(@song))
-    end
+    # it "links to the song" do
+    #   visit songs_path
+    #   expect(page).to have_link("The Grid", href: song_path(@song))
+    # end
 
     it "has a link to edit the song if no artist" do
       song = Song.create(title: "Mambo No. 5")
